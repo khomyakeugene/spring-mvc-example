@@ -13,7 +13,7 @@ import java.util.Map;
 @Controller
 public class MainController {
 
-    @RequestMapping(value = "/main", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = RequestMethod.GET)
     public String index(Map<String, Object> model) {
         model.put("currentTime", new Date().toString());
 
